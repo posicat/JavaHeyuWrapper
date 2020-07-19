@@ -1,4 +1,4 @@
-package HeyuWrapper;
+package org.cattech.HeyuWrapper;
 
 public class HeyuWrapperException extends Exception {
 	private static final long serialVersionUID = 1L;

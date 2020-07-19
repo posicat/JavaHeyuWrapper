@@ -1,4 +1,4 @@
-package HeyuWrapper;
+package org.cattech.HeyuWrapper;
 
 public interface HeyuWrapperCallback {
 	

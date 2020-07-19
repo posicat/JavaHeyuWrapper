@@ -1,4 +1,4 @@
-package HeyuWrapper;
+package org.cattech.HeyuWrapper;
 
 public class X10Action {
 
@@ -25,11 +25,20 @@ public class X10Action {
 		}
 		this.houseCode = houseCode;
 	}
+
+	public char getHousecode() {
+		return houseCode;
+	}
+
 	public void setUnit(int unit) throws HeyuWrapperException {
 		if (unit < 1 || unit > 16) {
 			throw (new HeyuWrapperException("Unit is out of range 1-16"));
 		}
 		this.unit = unit;
+	}
+	
+	public int getUnit() {
+		return unit;
 	}
 	
 	public String getModule() {
@@ -75,6 +84,7 @@ public class X10Action {
 		return this.source;
 	}
 
+	@Override
 	public String toString() {
 		String strOut = "X10Action : {housecode="+String.valueOf(this.houseCode)+",unit="+this.unit+",action="+this.action+",delta="+delta+"}";
 		return strOut;
